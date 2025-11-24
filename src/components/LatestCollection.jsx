@@ -6,28 +6,27 @@ export default function LatestCollection() {
       id: 1,
       title: "Premium Hair Care",
       subtitle: "Professional salon quality",
-      image:
-        "flat-lay-natural-self-care-products-composition_23-2148990019.avif",
+      type: "video",
+      src: "/download (9).mp4", // rename file to avoid spaces
     },
     {
       id: 2,
       title: "Radiant Skin Care",
       subtitle: "Youthful glow every day",
-      image:
-        "unnamed (2).jpg",
+      type: "video",
+      src: "/whatsapp (13).mp4",
     },
     {
       id: 3,
       title: "Bold Makeup",
       subtitle: "Express your true self",
-      image:
-        "1761801890173_content.png",
+      type: "video", // FIX: This was video but you wrote image
+      src: "/WhatsApp Video 2025-10-22 at 19.02.33_d61d9a85.mp4", // rename file to avoid spaces
     },
   ];
 
   return (
     <section className="bg-gray-50 py-16">
-      {/* Heading */}
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-gray-800">
           Discover Our Latest Collection
@@ -37,23 +36,32 @@ export default function LatestCollection() {
         </p>
       </div>
 
-      {/* Card Grid */}
       <div className="flex justify-center gap-10 flex-wrap px-6">
         {items.map((item) => (
           <div
             key={item.id}
-            className="rounded-3xl w-80 h-[380px] shadow-md hover:shadow-xl transition overflow-hidden cursor-pointer bg-white"
+            className="rounded-3xl w-96 h-[420px] shadow-md hover:shadow-xl transition overflow-hidden cursor-pointer bg-white"
           >
-            {/* Image */}
-            <div className="h-60 w-full overflow-hidden">
-              <img
-                src={item.image}
-                alt={item.title}
-                className="h-full w-full object-cover hover:scale-110 transition duration-500"
-              />
+            {/* Media Section */}
+            <div className="h-72 w-full overflow-hidden">
+              {item.type === "video" ? (
+                <video
+                  src={item.src}
+                  className="h-full w-full object-cover"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                />
+              ) : (
+                <img
+                  src={item.src}
+                  alt={item.title}
+                  className="h-full w-full object-cover hover:scale-110 transition duration-500"
+                />
+              )}
             </div>
 
-            {/* Text */}
             <div className="p-5 text-center">
               <h3 className="text-lg font-semibold text-gray-800">
                 {item.title}

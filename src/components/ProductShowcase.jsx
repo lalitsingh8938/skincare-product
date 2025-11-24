@@ -7,8 +7,8 @@ const products = [
     price: "₹899",
     rating: 5.0,
     reviews: 120,
-    image:
-      "my-11134207-7r992-lncjvl5c4hj023 (1).webp",
+    type: "video",
+    src: "/download (8).mp4", // renamed file
   },
   {
     id: 2,
@@ -16,18 +16,18 @@ const products = [
     price: "₹699",
     rating: 4.8,
     reviews: 95,
-    image:
-      "assorted-skincare-items-display_961875-155521.jpg",
-      
+    type: "video",
+    src: "/download (4).mp4",
   },
   {
     id: 3,
-    title: "Glycolic Gloss Leave-in Serum",
+    title: "L'Oréal Paris Matte Signature Glycolic Gloss Leave-in Serum",
     price: "₹1,299",
     rating: 4.9,
     reviews: 78,
-    image:
-      "71Fjby8GKlL._UF1000,1000_QL80_.jpg",
+    type: "video",
+    // src: "/download (4).mp4",
+    src: "/download (3).mp4",
   },
 ];
 
@@ -50,14 +50,17 @@ export default function ProductShowcase() {
         {products.map((item) => (
           <div
             key={item.id}
-            className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition duration-300 w-80"
+            className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition duration-300 w-96"
           >
-            {/* Image / Video */}
+            {/* Video */}
             <div className="relative w-full h-96 overflow-hidden rounded-t-2xl">
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-full h-full object-cover hover:scale-110 transition duration-500"
+              <video
+                src={item.src}
+                className="w-full h-full object-cover"
+                autoPlay
+                loop
+                muted
+                playsInline
               />
             </div>
 
@@ -76,7 +79,9 @@ export default function ProductShowcase() {
               </div>
 
               {/* Price */}
-              <p className="text-xl font-bold text-gray-900 mt-2">{item.price}</p>
+              <p className="text-xl font-bold text-gray-900 mt-2">
+                {item.price}
+              </p>
 
               {/* Button */}
               <button className="mt-4 w-full bg-yellow-500 hover:bg-yellow-600 text-white py-2 rounded-full font-semibold transition">
