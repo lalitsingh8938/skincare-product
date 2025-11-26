@@ -20,7 +20,7 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="w-full min-h-screen bg-gradient-to-r from-yellow-400 to-yellow-500 flex items-center justify-center px-10 relative">
+    <section className="w-full min-h-screen bg-[#00646C] flex items-center justify-center px-10 relative">
       {/* Content Wrapper */}
       <div className="max-w-7xl w-full flex flex-col md:flex-row items-center justify-between gap-10">
         {/* LEFT TEXT */}
