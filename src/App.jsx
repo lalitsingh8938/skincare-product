@@ -12,9 +12,7 @@ import ShowcaseSection from "./components/ShowcaseSection";
 import HowItWorks from "./components/HowItWorks";
 import SocialSection from "./components/SocialSection";
 import LiveExampleEmbed from "./components/LiveExampleEmbed";
-// import { FEATURES } from "./constants";
 import FeaturesSection from "./components/FeaturesSection";
-
 
 function App() {
   return (
