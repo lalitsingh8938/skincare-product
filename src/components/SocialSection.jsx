@@ -3,7 +3,9 @@ import React from "react";
 export default function SocialSection() {
   return (
     <section className="py-16 bg-white text-center">
-      <h2 className="text-3xl font-bold mb-10">Follow Us</h2>
+      <h2 className="text-3xl font-bold mb-10 text-slate-700">
+        Designed by AI. Loved by Brands.
+      </h2>
 
       {/* Social Icons Row */}
       <div className="flex flex-row justify-center items-center gap-10">
@@ -21,7 +23,7 @@ export default function SocialSection() {
         </a>
 
         {/* YouTube */}
-        <a
+        {/* <a
           href="https://youtube.com"
           target="_blank"
           className="hover:scale-105 transition"
@@ -31,7 +33,7 @@ export default function SocialSection() {
             alt="YouTube"
             className="w-28 h-28 rounded-lg object-cover shadow-md"
           />
-        </a>
+        </a> */}
       </div>
     </section>
   );
