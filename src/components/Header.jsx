@@ -63,7 +63,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-[#fdfbf3] shadow-sm border-b-2 border">
+    <nav className="bg-[#fdfbf3] shadow-sm border-slate-200 border-b-2">
       <div className="max-w-7xl mx-auto flex items-center justify-between py-2 px-6">
         {/* LEFT LOGO */}
         <div className="flex items-center gap-4">

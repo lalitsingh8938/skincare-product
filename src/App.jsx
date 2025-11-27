@@ -21,19 +21,20 @@ function App() {
     <div>
       <Header />
       <HeroSection />
-      <FeatureOverview />
+      {/* <FeatureOverview /> */}
       <HowItWorks />
       {/* <VideoWalkthrough /> */}
       {/* <MediaUploader /> */}
       <FeaturesSection />
       <UseCaseSection />
       <ShowcaseSection />
-      <SocialSection />
+     
       {/* <ProductShowcase />
       <LatestCollection /> */}
       {/* <HealthTipsSection /> */}
       {/* <LiveExampleEmbed /> */}
       <FAQ />
+       <SocialSection />
       <Footer />
     </div>
   );

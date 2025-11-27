@@ -3,29 +3,54 @@ import React, { useState } from "react";
 export default function FAQPage() {
   const faqs = [
     {
-      question: "How does brand governance work?",
+      question: "What types of content can the platform generate?",
       answer:
-        "Our platform ensures every piece of content follows your brand rules, tone, assets, and compliance guidelines automatically using AI-based guardrails.",
+        "Our platform can create videos, images, captions, ad creatives, product shots, posters, social media content, landing page assets, and even localized content across multiple languages — all from simple prompts.",
     },
     {
-      question: "Can we manage multiple brands?",
+      question: "How does the AI maintain brand consistency?",
       answer:
-        "Yes. You can create dedicated brand spaces with their own rules, assets, templates, and user permissions.",
+        "Each brand has its own identity profile including fonts, colors, tone of voice, logo rules, and visual guidelines. The AI automatically applies these rules to every asset, ensuring 100% on-brand output.",
     },
     {
-      question: "Can we localise content across markets?",
+      question: "Can I upload my product catalog for personalized content?",
       answer:
-        "Absolutely. The system adapts copy, visuals, and messaging for different regions, languages, and cultural sensitivities.",
+        "Yes. You can upload product images, descriptions, USPs, and specifications. The AI uses this structured data to generate hyper-accurate, context-aware creative assets.",
     },
     {
-      question: "How does user access and permissioning work?",
+      question: "Does the platform support multiple brands or sub-brands?",
       answer:
-        "You can assign granular roles and permissions—such as creators, reviewers, approvers, and admins—to maintain control and governance.",
+        "Absolutely. Enterprises can manage dozens of brands in one dashboard, each with its own rules, teams, and content libraries.",
     },
     {
-      question: "Can we integrate with DAM/CMS systems?",
+      question: "Can teams collaborate and approve content within the platform?",
       answer:
-        "Yes. DAM and CMS integrations are available through APIs. Automated asset ingestion and publishing are also supported.",
+        "Yes. Teams can review, comment, request edits, and approve assets inside the platform. No more juggling multiple tools or WhatsApp approvals.",
+    },
+    {
+      question: "Can we publish content directly to social media?",
+      answer:
+        "Yes. You can schedule and publish to Facebook, Instagram, TikTok, and other channels right from the dashboard using our Publishing & Calendar feature.",
+    },
+    {
+      question: "How does the platform handle localization?",
+      answer:
+        "The AI can recreate any asset — images, videos, captions, scripts — in multiple languages with cultural nuance and region-specific adaptation, without losing brand identity.",
+    },
+    {
+      question: "Is the content safe and compliant?",
+      answer:
+        "Yes. All content passes through brand governance checks — tone, rules, do’s & don’ts, claims, and compliance flags — to ensure you never publish off-brand or risky content.",
+    },
+    {
+      question: "Can I reuse, repurpose, or remix previously generated content?",
+      answer:
+        "Definitely. Everything is stored in your Content Library, where you can duplicate, iterate, localize, or convert assets into different formats instantly.",
+    },
+    {
+      question: "What AI models power the platform?",
+      answer:
+        "We use a combination of leading foundation models and custom multimodal engines optimized for speed, quality, and enterprise-grade security.",
     },
   ];
 
@@ -36,7 +61,7 @@ export default function FAQPage() {
   };
 
   return (
-    <section className="py-20 bg-[#F2F0E4] min-h-96">
+    <section className="py-20 bg-white min-h-96">
       <div className="max-w-4xl mx-auto px-6">
         {/* Header */}
         <h1 className="text-4xl md:text-5xl font-bold text-center text-slate-800 mb-10">
@@ -48,7 +73,7 @@ export default function FAQPage() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 rounded-xl p-6 shadow hover:shadow-md transition-all cursor-pointer"
+              className="bg-gradient-to-b from-[#6c003d34] to-[#F2F0E4] border border-gray-200 rounded-xl p-6 shadow hover:shadow-md transition-all cursor-pointer"
               onClick={() => toggleFAQ(index)}
             >
               <div className="flex justify-between items-center">
