@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SocialSection() {
   return (
-    <section className="py-16 bg-white text-center">
+    <section className="py-16 bg-gradient-to-b from-white to-[#00646C] text-center">
       <h2 className="text-3xl font-bold mb-10">Follow Us</h2>
 
       {/* Social Icons Row */}

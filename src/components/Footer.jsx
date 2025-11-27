@@ -1,87 +1,61 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaYoutube, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#263547] text-gray-300 py-14">
+    <footer className="bg-[#0E1A21] text-gray-300 py-16">
       {/* MAIN GRID */}
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 px-6 text-sm">
-        
-        {/* Column 1 */}
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 px-6 text-sm">
+
+        {/* About */}
         <div>
-          <h3 className="text-yellow-300 font-semibold mb-3">Our Categories</h3>
+          <h3 className="text-[#00A4A7] font-semibold text-lg mb-3">About</h3>
+          <p className="leading-relaxed text-gray-400">
+            AI-powered content generation platform for enterprise teams.
+            This page showcases core capabilities currently under development.
+          </p>
+        </div>
+
+        {/* Resources */}
+        <div>
+          <h3 className="text-[#00A4A7] font-semibold text-lg mb-3">Resources</h3>
           <ul className="space-y-2">
-            <li>Skin Care</li>
-            <li>Hair Care</li>
-            <li>Hair Color</li>
-            <li>Makeup</li>
+            <li className="hover:text-white transition cursor-pointer">Platform Overview</li>
+            <li className="hover:text-white transition cursor-pointer">Feature Guide</li>
+            <li className="hover:text-white transition cursor-pointer">Governance & Brand Controls</li>
+            <li className="hover:text-white transition cursor-pointer">Integrations (Coming Soon)</li>
           </ul>
         </div>
 
-        {/* Column 2 */}
+        {/* Legal */}
         <div>
-          <h3 className="text-yellow-300 font-semibold mb-3">Virtual Tools</h3>
+          <h3 className="text-[#00A4A7] font-semibold text-lg mb-3">Legal</h3>
           <ul className="space-y-2">
-            <li>Skin Genius</li>
-            <li>Hair Color Try On</li>
-            <li>Makeup Try On</li>
-            <li>Beauty Studio</li>
+            <li className="hover:text-white transition cursor-pointer">Privacy Policy</li>
+            <li className="hover:text-white transition cursor-pointer">Terms of Use</li>
+            <li className="hover:text-white transition cursor-pointer">Data Protection Notes</li>
+            <li className="hover:text-white transition cursor-pointer">AI Content & Safety Disclosure</li>
           </ul>
         </div>
 
-        {/* Column 3 */}
+        {/* Contact */}
         <div>
-          <h3 className="text-yellow-300 font-semibold mb-3">Our Commitments</h3>
-          <ul className="space-y-2">
-            <li>Sustainable Growth</li>
-            <li>Stand Up</li>
-            <li>The Other Side</li>
-            <li>Dermatologist Board</li>
-          </ul>
-        </div>
-
-        {/* Column 4 */}
-        <div>
-          <h3 className="text-yellow-300 font-semibold mb-3">Follow Us</h3>
-          <div className="flex gap-3">
-            <div className="bg-white/10 w-9 h-9 rounded-full flex items-center justify-center hover:bg-white/20 transition">
-              <FaFacebookF size={14} />
-            </div>
-
-            <div className="bg-white/10 w-9 h-9 rounded-full flex items-center justify-center hover:bg-white/20 transition">
-              <FaTwitter size={14} />
-            </div>
-
-            <div className="bg-white/10 w-9 h-9 rounded-full flex items-center justify-center hover:bg-white/20 transition">
-              <FaYoutube size={14} />
-            </div>
-
-            <div className="bg-white/10 w-9 h-9 rounded-full flex items-center justify-center hover:bg-white/20 transition">
-              <FaInstagram size={14} />
-            </div>
-          </div>
+          <h3 className="text-[#00A4A7] font-semibold text-lg mb-3">Contact</h3>
+          <p className="text-gray-400">For collaboration or technical enquiries:</p>
+          <p className="mt-2 font-semibold text-white">contact@ust.com</p>
         </div>
       </div>
 
       {/* Divider */}
-      <div className="max-w-4xl mx-auto border-t border-gray-600 mt-10 pt-10"></div>
+      <div className="max-w-6xl mx-auto border-t border-gray-700 mt-12 pt-8"></div>
 
-      {/* LOGO + TAGLINE */}
-      <div className="text-center text-gray-200">
-        <p className="font-bold text-lg">L’Oréal Paris</p>
-        <p className="italic text-yellow-300 mt-1">Because You’re Worth It</p>
-      </div>
-
-      {/* LINKS */}
-      <div className="text-center mt-5 space-x-5 text-sm">
-        <a href="#" className="hover:underline">Privacy Policy</a>
-        <a href="#" className="hover:underline">Terms & Conditions</a>
-        <a href="#" className="hover:underline">Cookie Policy</a>
-      </div>
+      {/* Version Info */}
+      <p className="text-center text-gray-400 text-sm mb-2">
+        <span className="font-medium text-[#00A4A7]">Preview Build</span> — Updated November 2025
+      </p>
 
       {/* COPYRIGHT */}
-      <p className="text-center text-xs text-gray-400 mt-5">
-        © 2025 L’Oréal Paris. All rights reserved.
+      <p className="text-center text-xs text-gray-500 mt-2">
+        © 2025 Your Company. All rights reserved.
       </p>
     </footer>
   );

@@ -11,25 +11,29 @@ import UseCaseSection from "./components/UseCaseSection";
 import ShowcaseSection from "./components/ShowcaseSection";
 import HowItWorks from "./components/HowItWorks";
 import SocialSection from "./components/SocialSection";
-import LiveExampleEmbed from "./components/LiveExampleEmbed";
+// import LiveExampleEmbed from "./components/LiveExampleEmbed";
 import FeaturesSection from "./components/FeaturesSection";
+import FeatureOverview from "./components/FeatureOverview";
+import FAQ from "./components/FAQ";
 
 function App() {
   return (
     <div>
       <Header />
       <HeroSection />
-      <VideoWalkthrough />
+      <FeatureOverview />
+      <HowItWorks />
+      {/* <VideoWalkthrough /> */}
       {/* <MediaUploader /> */}
       <FeaturesSection />
       <UseCaseSection />
       <ShowcaseSection />
-      <HowItWorks />
       <SocialSection />
-      <ProductShowcase />
-      <LatestCollection />
-      <HealthTipsSection />
-      <LiveExampleEmbed />
+      {/* <ProductShowcase />
+      <LatestCollection /> */}
+      {/* <HealthTipsSection /> */}
+      {/* <LiveExampleEmbed /> */}
+      <FAQ />
       <Footer />
     </div>
   );

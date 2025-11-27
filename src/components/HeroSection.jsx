@@ -20,24 +20,26 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <section className="w-full min-h-screen bg-[#00646C] flex items-center justify-center px-10 relative">
+    <section className="w-full min-h-screen bg-gradient-to-b from-white to-[#00646C] flex items-center justify-center px-10 relative">
       {/* Content Wrapper */}
       <div className="max-w-7xl w-full flex flex-col md:flex-row items-center justify-between gap-10">
         {/* LEFT TEXT */}
         <div className="flex-1 text-left">
           <h1 className="text-5xl md:text-6xl font-bold text-white drop-shadow-lg leading-tight">
-            Shine Beyond Limits
+            AI Content Platform for Enterprise Teams
           </h1>
 
-          <h2 className="text-2xl text-white/90 mt-2 drop-shadow">
+          {/* <h2 className="text-2xl text-white/90 mt-2 drop-shadow">
             With Glycolic Gloss Range
-          </h2>
+          </h2> */}
 
-          <p className="text-white/80 mt-4 max-w-lg leading-relaxed drop-shadow">
-            Transform your hair with our revolutionary Glycolic Acid
-            Complex-powered range that delivers mirror-like shine and activates
-            more gloss.
-          </p>
+          <h2 className="text-white/80 mt-4 max-w-lg leading-relaxed drop-shadow">
+            {/* AI Content Platform for Enterprise Teams Create, manage, localise,
+            and publish brand-safe content at scale. Subhead: A unified
+            workspace that helps multi-brand organisations streamline content
+            creation, approvals, and publishing. */}
+            Create, manage, localise, and publish consistent brand content across markets and channels — all in one place.
+          </h2>
 
           <div className="mt-6 flex gap-4">
             <button className="bg-white text-yellow-600 px-6 py-2 rounded-full font-semibold shadow hover:bg-yellow-100 transition">
