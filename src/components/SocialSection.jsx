@@ -131,7 +131,6 @@
 //   );
 // }
 
-
 import React, { useEffect } from "react";
 
 export default function SocialSection() {
@@ -156,10 +155,10 @@ export default function SocialSection() {
 
       {/* Subtitle */}
       <p className="text-center text-gray-500 mb-10 text-lg">
-        See our latest reels, behind-the-scenes & brand moments.
+        See our latest reels & brand moments.
       </p>
 
-      {/* Instagram Button */}
+      {/* Instagram Button ONLY */}
       <div className="flex justify-center mb-10">
         <a
           href="https://www.instagram.com/sarvamastiofficial/"
