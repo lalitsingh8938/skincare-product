@@ -37,7 +37,7 @@ export default function ProductShowcase() {
       {/* Heading */}
       <div className="text-center mb-10">
         <h2 className="text-4xl font-bold text-gray-800">
-          Discover the All-New Glycolic Gloss Range
+         Your Website Deserves more than static boring photos
         </h2>
         <p className="mt-2 text-gray-500 max-w-2xl mx-auto">
           Glycolic Gloss is here to transform your hair! From shampoo,
