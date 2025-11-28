@@ -121,42 +121,32 @@
 //   );
 // }
 
+
+
+
+
+
+
+
+
+
+
+
 import React, { useEffect } from "react";
 
 export default function SocialSection() {
-  // useEffect(() => {
-  //   const scriptId = "sociablekit-script";
-
-  //   if (!document.getElementById(scriptId)) {
-  //     const script = document.createElement("script");
-  //     script.id = scriptId;
-  //     script.src = "https://widgets.sociablekit.com/instagram-reels/widget.js";
-  //     script.defer = true;
-  //     document.body.appendChild(script);
-  //   }
-  // }, []);
 
   useEffect(() => {
     const scriptId = "sociablekit-script";
 
-    // Remove old widget container completely
-    const oldWidget = document.querySelector(".sk-ww-instagram-reels");
-    if (oldWidget) {
-      oldWidget.innerHTML = "";
+    // If script already exists, do NOT reload it
+    if (!document.getElementById(scriptId)) {
+      const script = document.createElement("script");
+      script.id = scriptId;
+      script.src = "https://widgets.sociablekit.com/instagram-reels/widget.js";
+      script.defer = true;
+      document.body.appendChild(script);
     }
-
-    // Remove old script if exists
-    const oldScript = document.getElementById(scriptId);
-    if (oldScript) {
-      oldScript.remove();
-    }
-
-    // Add new script
-    const script = document.createElement("script");
-    script.id = scriptId;
-    script.src = "https://widgets.sociablekit.com/instagram-reels/widget.js";
-    script.defer = true;
-    document.body.appendChild(script);
   }, []);
 
   return (
@@ -166,12 +156,11 @@ export default function SocialSection() {
         Follow Us On Instagram
       </h2>
 
-      {/* Subtitle */}
       <p className="text-center text-gray-500 mb-10 text-lg">
         See our latest reels, behind-the-scenes & brand moments.
       </p>
 
-      {/* Instagram Button */}
+      {/* Button */}
       <div className="flex justify-center mb-10">
         <a
           href="https://www.instagram.com/sarvamastiofficial/"
@@ -192,7 +181,10 @@ export default function SocialSection() {
 
       {/* Instagram Reels Widget */}
       <div className="max-w-6xl mx-auto px-4">
-        <div className="sk-ww-instagram-reels" data-embed-id="25627423"></div>
+        <div
+          className="sk-ww-instagram-reels"
+          data-embed-id="25627423"
+        ></div>
       </div>
     </section>
   );
