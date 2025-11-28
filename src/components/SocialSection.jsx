@@ -121,20 +121,9 @@
 //   );
 // }
 
-
-
-
-
-
-
-
-
-
-
 import React, { useEffect } from "react";
 
 export default function SocialSection() {
-
   useEffect(() => {
     const scriptId = "sociablekit-script";
 
@@ -178,10 +167,7 @@ export default function SocialSection() {
 
       {/* Instagram Reels Widget */}
       <div className="max-w-6xl mx-auto px-4">
-        <div
-          className="sk-ww-instagram-reels"
-          data-embed-id="25627499"
-        ></div>
+        <div className="sk-ww-instagram-reels" data-embed-id="25627499"></div>
       </div>
     </section>
   );

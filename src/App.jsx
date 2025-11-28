@@ -31,18 +31,18 @@ function App() {
       {/* <FeatureOverview /> */}
       <CreativeStudioFeatures />
       <HowItWorks />
-      {/* <VideoWalkthrough /> */}
+      <VideoWalkthrough />
       {/* <MediaUploader /> */}
       <FeaturesSection />
       <UseCaseSection />
       <ShowcaseSection />
-     
-      {/* <ProductShowcase />
-      <LatestCollection /> */}
+
+      <ProductShowcase />
+      {/* <LatestCollection />  */}
       {/* <HealthTipsSection /> */}
       {/* <LiveExampleEmbed /> */}
       <FAQ />
-       <SocialSection />
+      <SocialSection />
       <Footer />
     </div>
   );
