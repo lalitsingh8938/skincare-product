@@ -131,7 +131,6 @@
 //   );
 // }
 
-
 import React from "react";
 
 export default function InstagramBrandLink() {
@@ -141,13 +140,14 @@ export default function InstagramBrandLink() {
         href="https://www.instagram.com/sarvamastiofficial/"
         target="_blank"
         rel="noopener noreferrer"
-        className="hover:scale-110 transition-all duration-300"
+        className="flex items-center gap-3 bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-5 py-3 rounded-full shadow-md hover:shadow-xl hover:scale-105 transition"
       >
         <img
-          src="/instagram-logo.png"   // <-- yaha apna selected logo rakho
+          src="/instagram-logo.png" 
           alt="Instagram"
-          className="w-20 h-20 object-cover"
+          className="w-6 h-6"
         />
+        <span className="font-semibold">Follow us on Instagram</span>
       </a>
     </div>
   );
