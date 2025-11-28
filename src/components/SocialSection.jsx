@@ -45,15 +45,6 @@
 //   );
 // }
 
-
-
-
-
-
-
-
-
-
 // import React, { useEffect } from "react";
 
 // export default function SocialSection() {
@@ -105,7 +96,6 @@
 //   );
 // }
 
-
 // import React, { useEffect } from "react";
 
 // export default function SocialSection() {
@@ -130,19 +120,43 @@
 //     </div>
 //   );
 // }
+
 import React, { useEffect } from "react";
 
 export default function SocialSection() {
+  // useEffect(() => {
+  //   const scriptId = "sociablekit-script";
+
+  //   if (!document.getElementById(scriptId)) {
+  //     const script = document.createElement("script");
+  //     script.id = scriptId;
+  //     script.src = "https://widgets.sociablekit.com/instagram-reels/widget.js";
+  //     script.defer = true;
+  //     document.body.appendChild(script);
+  //   }
+  // }, []);
+
   useEffect(() => {
     const scriptId = "sociablekit-script";
 
-    if (!document.getElementById(scriptId)) {
-      const script = document.createElement("script");
-      script.id = scriptId;
-      script.src = "https://widgets.sociablekit.com/instagram-reels/widget.js";
-      script.defer = true;
-      document.body.appendChild(script);
+    // Remove old widget container completely
+    const oldWidget = document.querySelector(".sk-ww-instagram-reels");
+    if (oldWidget) {
+      oldWidget.innerHTML = "";
     }
+
+    // Remove old script if exists
+    const oldScript = document.getElementById(scriptId);
+    if (oldScript) {
+      oldScript.remove();
+    }
+
+    // Add new script
+    const script = document.createElement("script");
+    script.id = scriptId;
+    script.src = "https://widgets.sociablekit.com/instagram-reels/widget.js";
+    script.defer = true;
+    document.body.appendChild(script);
   }, []);
 
   return (
@@ -178,10 +192,7 @@ export default function SocialSection() {
 
       {/* Instagram Reels Widget */}
       <div className="max-w-6xl mx-auto px-4">
-        <div
-          className="sk-ww-instagram-reels"
-          data-embed-id="25627423"
-        ></div>
+        <div className="sk-ww-instagram-reels" data-embed-id="25627423"></div>
       </div>
     </section>
   );
