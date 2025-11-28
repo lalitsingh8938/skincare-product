@@ -15,13 +15,21 @@ import SocialSection from "./components/SocialSection";
 import FeaturesSection from "./components/FeaturesSection";
 import FeatureOverview from "./components/FeatureOverview";
 import FAQ from "./components/FAQ";
+import ContentProHero from "./components/ContentProHero";
+import PartnersLogos from "./components/PartnersLogos";
+import CreativeStudioFeatures from "./components/CreativeStudioFeatures";
+import ContentProShowcase from "./components/ContentProShowcase";
 
 function App() {
   return (
     <div>
       <Header />
       <HeroSection />
+      <ContentProHero />
+      <ContentProShowcase />
+      <PartnersLogos />
       {/* <FeatureOverview /> */}
+      <CreativeStudioFeatures />
       <HowItWorks />
       {/* <VideoWalkthrough /> */}
       {/* <MediaUploader /> */}
