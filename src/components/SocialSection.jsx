@@ -132,64 +132,23 @@
 // }
 
 
+import React from "react";
 
-import React, { useEffect, useState } from "react";
-
-export default function SocialSection() {
-  const [showWidget, setShowWidget] = useState(false);
-
-  const loadInstagramWidget = () => {
-    setShowWidget(true);
-
-    const scriptId = "sociablekit-script";
-
-    // Load script only once
-    if (!document.getElementById(scriptId)) {
-      const script = document.createElement("script");
-      script.id = scriptId;
-      script.src = "https://widgets.sociablekit.com/instagram-reels/widget.js";
-      script.defer = true;
-      document.body.appendChild(script);
-    }
-  };
-
+export default function InstagramBrandLink() {
   return (
-    <section className="py-20 bg-[#fafafa] text-center">
-
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-        Follow Us On Instagram
-      </h2>
-
-      <p className="text-gray-500 mb-10 text-lg">
-        See our latest reels & brand moments.
-      </p>
-
-      {/* Instagram Button */}
-      <div className="flex justify-center mb-10">
-        <button
-          onClick={loadInstagramWidget}
-          className="flex items-center gap-3 bg-white border border-gray-200 px-6 py-3 rounded-full shadow-sm hover:shadow-lg transition-all hover:-translate-y-1"
-        >
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
-            className="w-8 h-8"
-            alt="Instagram"
-          />
-          <span className="font-medium text-gray-700">
-            Visit Our Instagram Page
-          </span>
-        </button>
-      </div>
-
-      {/* Reels Widget — Show ONLY After Button Click */}
-      {showWidget && (
-        <div className="max-w-6xl mx-auto px-4">
-          <div
-            className="sk-ww-instagram-reels"
-            data-embed-id="25627423"
-          ></div>
-        </div>
-      )}
-    </section>
+    <div className="flex justify-center mt-6">
+      <a
+        href="https://www.instagram.com/sarvamastiofficial/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:scale-110 transition-all duration-300"
+      >
+        <img
+          src="/instagram-logo.png"   // <-- yaha apna selected logo rakho
+          alt="Instagram"
+          className="w-20 h-20 object-cover"
+        />
+      </a>
+    </div>
   );
 }
