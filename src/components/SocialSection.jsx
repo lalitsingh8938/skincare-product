@@ -130,25 +130,59 @@
 //     </div>
 //   );
 // }
+import React, { useEffect } from "react";
 
-import React from "react";
+export default function SocialSection() {
+  useEffect(() => {
+    const scriptId = "sociablekit-script";
 
-export default function InstagramBrandLink() {
+    if (!document.getElementById(scriptId)) {
+      const script = document.createElement("script");
+      script.id = scriptId;
+      script.src = "https://widgets.sociablekit.com/instagram-reels/widget.js";
+      script.defer = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
   return (
-    <div className="flex justify-center mt-6">
-      <a
-        href="https://www.instagram.com/sarvamastiofficial/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center gap-3 bg-gradient-to-r from-pink-500 to-yellow-500 text-white px-5 py-3 rounded-full shadow-md hover:shadow-xl hover:scale-105 transition"
-      >
-        <img
-          src="/instagram-logo.png" 
-          alt="Instagram"
-          className="w-6 h-6"
-        />
-        <span className="font-semibold">Follow us on Instagram</span>
-      </a>
-    </div>
+    <section className="py-20 bg-[#fafafa]">
+      {/* Heading */}
+      <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+        Follow Us On Instagram
+      </h2>
+
+      {/* Subtitle */}
+      <p className="text-center text-gray-500 mb-10 text-lg">
+        See our latest reels, behind-the-scenes & brand moments.
+      </p>
+
+      {/* Instagram Button */}
+      <div className="flex justify-center mb-10">
+        <a
+          href="https://www.instagram.com/sarvamastiofficial/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-3 bg-white border border-gray-200 px-6 py-3 rounded-full shadow-sm hover:shadow-lg transition-all hover:-translate-y-1"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png"
+            alt="Instagram"
+            className="w-8 h-8"
+          />
+          <span className="font-medium text-gray-700">
+            Visit Our Instagram Page
+          </span>
+        </a>
+      </div>
+
+      {/* Instagram Reels Widget */}
+      <div className="max-w-6xl mx-auto px-4">
+        <div
+          className="sk-ww-instagram-reels"
+          data-embed-id="25627423"
+        ></div>
+      </div>
+    </section>
   );
 }
