@@ -132,20 +132,18 @@
 // }
 
 
-import React, { useState } from "react";
+
+import React, { useEffect, useState } from "react";
 
 export default function SocialSection() {
   const [showWidget, setShowWidget] = useState(false);
 
-  const handleInstagramClick = () => {
-    // 1️⃣ Open Instagram page in new tab
-    window.open("https://www.instagram.com/sarvamastiofficial/", "_blank");
-
-    // 2️⃣ Show widget below (only once)
+  const loadInstagramWidget = () => {
     setShowWidget(true);
 
     const scriptId = "sociablekit-script";
 
+    // Load script only once
     if (!document.getElementById(scriptId)) {
       const script = document.createElement("script");
       script.id = scriptId;
@@ -166,10 +164,10 @@ export default function SocialSection() {
         See our latest reels & brand moments.
       </p>
 
-      {/* Button */}
+      {/* Instagram Button */}
       <div className="flex justify-center mb-10">
         <button
-          onClick={handleInstagramClick}
+          onClick={loadInstagramWidget}
           className="flex items-center gap-3 bg-white border border-gray-200 px-6 py-3 rounded-full shadow-sm hover:shadow-lg transition-all hover:-translate-y-1"
         >
           <img
@@ -183,7 +181,7 @@ export default function SocialSection() {
         </button>
       </div>
 
-      {/* Widget Loads ONLY After Click */}
+      {/* Reels Widget — Show ONLY After Button Click */}
       {showWidget && (
         <div className="max-w-6xl mx-auto px-4">
           <div
