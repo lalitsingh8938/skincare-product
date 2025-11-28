@@ -131,7 +131,6 @@
 
 
 
-
 import React, { useEffect } from "react";
 
 export default function SocialSection() {
@@ -151,7 +150,6 @@ export default function SocialSection() {
 
   return (
     <section className="py-20 bg-[#fafafa]">
-      {/* Heading */}
       <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-6">
         Follow Us On Instagram
       </h2>
@@ -160,7 +158,6 @@ export default function SocialSection() {
         See our latest reels, behind-the-scenes & brand moments.
       </p>
 
-      {/* Button */}
       <div className="flex justify-center mb-10">
         <a
           href="https://www.instagram.com/sarvamastiofficial/"
@@ -183,7 +180,7 @@ export default function SocialSection() {
       <div className="max-w-6xl mx-auto px-4">
         <div
           className="sk-ww-instagram-reels"
-          data-embed-id="25627423"
+          data-embed-id="25627499"
         ></div>
       </div>
     </section>
