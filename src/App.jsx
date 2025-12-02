@@ -37,7 +37,7 @@ function App() {
       <UseCaseSection />
       <ShowcaseSection />
 
-      <ProductShowcase />
+      {/* <ProductShowcase /> */}
       {/* <LatestCollection />  */}
       {/* <HealthTipsSection /> */}
       {/* <LiveExampleEmbed /> */}
