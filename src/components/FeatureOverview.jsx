@@ -195,12 +195,12 @@ const features = [
 
 export default function FeatureOverview() {
   return (
-    <section className="py-20 bg-[#F2F0E4]">
-      <h2 className="text-3xl md:text-4xl font-bold text-center">
+    <section className="py-20 bg-gradient-to-b from-[#1d0b28] to-[#12333d]">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-white">
         Feature Overview
       </h2>
 
-      <p className="text-center text-gray-600 mt-3 text-lg">
+      <p className="text-center text-white mt-3 text-lg">
         What the Platform Enables
       </p>
 

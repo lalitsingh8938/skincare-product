@@ -109,14 +109,14 @@ export default function HeroSection() {
   return (
     <section className="w-full min-h-screen bg-white px-10 py-10 flex justify-center">
       {/* CONTENT BOX (AMBER BACKGROUND) */}
-      <div className="max-w-7xl w-full  bg-gradient-to-b from-[#6c003d34] to-[#F2F0E4] rounded-3xl p-10 flex flex-col md:flex-row items-center justify-between gap-10 shadow-md">
+      <div className="max-w-7xl w-full  bg-gradient-to-b from-[#1d0b28] to-[#12333d] rounded-3xl p-10 flex flex-col md:flex-row items-center justify-between gap-10 shadow-md">
         {/* LEFT TEXT SECTION */}
         <div className="flex-1 text-left">
-          <h1 className="text-5xl md:text-6xl font-bold text-slate-700 drop-shadow-lg leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold text-white drop-shadow-lg leading-tight">
             AI Content Platform for Enterprise Teams
           </h1>
 
-          <h2 className="text-slate-700 mt-4 max-w-lg leading-relaxed drop-shadow">
+          <h2 className="text-white mt-4 max-w-lg leading-relaxed drop-shadow">
             Create, manage, localise, and publish consistent brand content
             across markets and channels —
             <span
@@ -132,7 +132,7 @@ export default function HeroSection() {
           </h2>
 
           <div className="mt-6 flex justify-center md:justify-start gap-4">
-            <button className="border border-slate-600 px-6 py-2 rounded-full text-slate-600 font-semibold hover:bg-slate-300 transition">
+            <button className="border border-slate-600 px-6 py-2 rounded-full text-white font-semibold hover:bg-slate-300 transition">
               WATCH VIDEO
             </button>
           </div>

@@ -73,22 +73,22 @@ export default function FAQPage() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-gradient-to-b from-[#6c003d34] to-[#F2F0E4] border border-gray-200 rounded-xl p-6 shadow hover:shadow-md transition-all cursor-pointer"
+              className="bg-gradient-to-b from-[#1d0b28] to-[#12333d] border border-gray-200 rounded-xl p-6 shadow hover:shadow-md transition-all cursor-pointer"
               onClick={() => toggleFAQ(index)}
             >
               <div className="flex justify-between items-center">
-                <h3 className="text-lg font-semibold text-gray-800">
+                <h3 className="text-lg font-semibold text-white">
                   {faq.question}
                 </h3>
 
-                <span className="text-2xl text-[#00646C] font-bold">
+                <span className="text-2xl text-white font-bold">
                   {openIndex === index ? "−" : "+"}
                 </span>
               </div>
 
               {/* Answer */}
               {openIndex === index && (
-                <p className="mt-4 text-gray-600 leading-relaxed animate-fadeIn">
+                <p className="mt-4 text-white leading-relaxed animate-fadeIn">
                   {faq.answer}
                 </p>
               )}

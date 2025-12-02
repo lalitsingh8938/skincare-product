@@ -263,23 +263,23 @@ export default function UseCaseTabs() {
       </div>
       {/* Content Box */}
       <div
-        className="max-w-5xl mx-auto bg-gradient-to-b from-[#6c003d34] to-[#F2F0E4] rounded-2xl shadow p-10 
+        className="max-w-5xl mx-auto bg-gradient-to-b from-[#1d0b28] to-[#12333d] rounded-2xl shadow p-10 
                    grid grid-cols-1 md:grid-cols-2 gap-10"
       >
         {/* LEFT TEXT */}
         <div>
-          <h3 className="text-2xl font-bold text-[#00646C] mb-4">
+          <h3 className="text-2xl font-bold text-white mb-4">
             {industries[activeTab].title}
           </h3>
 
-          <p className="text-gray-700 mb-4">
+          <p className="text-white mb-4">
             {industries[activeTab].description}
           </p>
 
           <ul className="space-y-2">
             {industries[activeTab].points.map((p, i) => (
-              <li key={i} className="text-[#00646C] font-medium">
-                ✓ <span className="text-gray-700 font-normal">{p}</span>
+              <li key={i} className="text-white font-medium">
+                ✓ <span className="text-white font-normal">{p}</span>
               </li>
             ))}
           </ul>

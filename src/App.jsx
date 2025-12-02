@@ -31,7 +31,7 @@ function App() {
       {/* <FeatureOverview /> */}
       <CreativeStudioFeatures />
       <HowItWorks />
-      <VideoWalkthrough />
+      {/* <VideoWalkthrough /> */}
       {/* <MediaUploader /> */}
       <FeaturesSection />
       <UseCaseSection />
