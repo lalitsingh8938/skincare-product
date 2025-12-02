@@ -132,7 +132,7 @@ export default function HeroSection() {
           </h2>
 
           <div className="mt-6 flex justify-center md:justify-start gap-4">
-            <button className="border border-slate-600 px-6 py-2 rounded-full text-white font-semibold hover:bg-slate-300 transition">
+            <button className="border border-slate-600 px-6 py-2 rounded-full text-white font-semibold hover:bg-blue-500 transition">
               WATCH VIDEO
             </button>
           </div>
