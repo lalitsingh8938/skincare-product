@@ -62,7 +62,7 @@ export default function PartnersLogos() {
   ];
 
   return (
-    <section className="py-14 bg-white">
+    <section className="py-14 bg-[#f7e9cc]">
       <div className="max-w-7xl mx-auto px-6">
         <h2 className="text-center text-5xl font-bold text-indigo-600 mb-10">
           Powered by Leading Technologies

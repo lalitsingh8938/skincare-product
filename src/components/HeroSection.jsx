@@ -103,28 +103,32 @@
 //   );
 // }
 
+
+
+
 import React from "react";
 
 export default function HeroSection() {
   return (
     <section className="w-full min-h-screen bg-white px-10 py-10 flex justify-center">
-      {/* CONTENT BOX (AMBER BACKGROUND) */}
-      <div className="max-w-7xl w-full  bg-[#006E74] rounded-3xl p-10 flex flex-col md:flex-row items-center justify-between gap-10 shadow-md">
+      {/* CONTENT BOX */}
+      <div className="max-w-7xl w-full bg-[#762D4B] rounded-3xl p-10 flex flex-col md:flex-row items-center justify-between gap-10 shadow-md">
+        
         {/* LEFT TEXT SECTION */}
         <div className="flex-1 text-left">
-          <h1 className="text-5xl md:text-6xl font-bold text-white drop-shadow-lg leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold text-[#FFFFFF] drop-shadow-lg leading-tight">
             AI Content Platform for Enterprise Teams
           </h1>
 
-          <h2 className="text-white mt-4 max-w-lg leading-relaxed drop-shadow">
+          <h2 className="text-[#FFFFFF] mt-4 max-w-lg leading-relaxed drop-shadow">
             Create, manage, localise, and publish consistent brand content
             across markets and channels —
             <span
               className="
-      text-transparent bg-clip-text 
-      bg-gradient-to-r from-[#FF007F] via-[#FF4FBF] to-[#FF8FE5] 
-      font-bold text-xl
-    "
+                text-transparent bg-clip-text 
+                bg-gradient-to-r from-[#FF007F] via-[#FF4FBF] to-[#FF8FE5] 
+                font-bold text-xl
+              "
             >
               all in one place
             </span>
@@ -132,7 +136,7 @@ export default function HeroSection() {
           </h2>
 
           <div className="mt-6 flex justify-center md:justify-start gap-4">
-            <button className="border border-slate-600 px-6 py-2 rounded-full text-white font-semibold hover:bg-blue-500 transition">
+            <button className="border border-[#FFFFFF] px-6 py-2 rounded-full text-[#FFFFFF] font-semibold hover:bg-[#FFFFFF]/20 transition">
               WATCH VIDEO
             </button>
           </div>
@@ -142,12 +146,12 @@ export default function HeroSection() {
         <div className="flex-1 flex justify-center">
           <div
             className="
-          w-full h-56
-          md:w-[500px] md:h-[300px]
-          lg:w-[650px] lg:h-[360px]
-          xl:w-[600px] xl:h-[420px]
-          rounded-2xl overflow-hidden shadow-lg bg-black relative
-        "
+              w-full h-56
+              md:w-[500px] md:h-[300px]
+              lg:w-[650px] lg:h-[360px]
+              xl:w-[600px] xl:h-[420px]
+              rounded-2xl overflow-hidden shadow-lg bg-black relative
+            "
           >
             <video
               src="/download (10).mp4"
@@ -159,7 +163,7 @@ export default function HeroSection() {
             />
 
             {/* TEXT OVER VIDEO */}
-            <div className="absolute bottom-4 left-4 text-white drop-shadow">
+            <div className="absolute bottom-4 left-4 text-[#FFFFFF] drop-shadow">
               <h3 className="font-bold text-xl lg:text-2xl">
                 Glycolic Gloss Range
               </h3>
@@ -167,6 +171,7 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
+
       </div>
     </section>
   );

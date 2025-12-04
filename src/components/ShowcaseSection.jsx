@@ -41,7 +41,7 @@ export default function ShowcaseSection() {
   ];
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-[#FFEDF3]">
       {" "}
       {/* screen background */}
       {/* Title */}

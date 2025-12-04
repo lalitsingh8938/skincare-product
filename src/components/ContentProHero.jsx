@@ -406,10 +406,10 @@ export default function ContentProHero() {
 
   return (
     <section className="bg-white py-16">
-      <div className="bg-gray-100 py-16">
+      <div className="bg-[#FFEDF3] py-16">
 
         {/* HERO */}
-        <div className="bg-gradient-to-b from-amber-100 via-orange-100 to-yellow-100 rounded-2xl p-12 max-w-4xl mx-auto text-center shadow-md">
+        <div className="bg-gradient-to-b from-amber-100 via-orange-100 to-yellow-100 rounded-2xl p-4 max-w-4xl mx-auto text-center shadow-md">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-gray-900">
             {fixedText}
             <span className="text-indigo-700">{typedText}</span>
@@ -445,7 +445,7 @@ function Card({ title, desc, icon }) {
   return (
     <div
       className="rounded-2xl p-10 shadow-md hover:shadow-xl transition transform hover:-translate-y-1 
-      bg-[#0097AC] text-white"
+      bg-white text-black"
     >
       <div className="flex items-start gap-4 mt-4">
         <div className="flex items-center justify-center w-16 h-16 rounded-full">

@@ -138,7 +138,7 @@ export default function SocialSection() {
   }, []);
 
   return (
-    <section className="py-20 bg-[#fafafa]">
+    <section className="py-20 bg-[#FFEDF3]">
       <h2 className="text-center text-3xl md:text-4xl font-bold text-gray-800 mb-6">
         Follow Us On Instagram
       </h2>

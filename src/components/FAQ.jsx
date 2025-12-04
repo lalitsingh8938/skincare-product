@@ -61,7 +61,7 @@ export default function FAQPage() {
   };
 
   return (
-    <section className="py-20 bg-white min-h-96">
+    <section className="py-20 bg-[#f7e9cc] min-h-96">
       <div className="max-w-4xl mx-auto px-6">
         {/* Header */}
         <h1 className="text-4xl md:text-5xl font-bold text-center text-slate-800 mb-10">
@@ -73,22 +73,22 @@ export default function FAQPage() {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-[#0097AC] border border-gray-200 rounded-xl p-6 shadow hover:shadow-md transition-all cursor-pointer"
+              className="bg-[#FFEDF3] border border-gray-200 rounded-xl p-6 shadow hover:shadow-md transition-all cursor-pointer"
               onClick={() => toggleFAQ(index)}
             >
               <div className="flex justify-between items-center">
-                <h3 className="text-lg font-semibold text-white">
+                <h3 className="text-lg font-semibold text-slate-700">
                   {faq.question}
                 </h3>
 
-                <span className="text-2xl text-white font-bold">
+                <span className="text-2xl text-slate-700 font-bold">
                   {openIndex === index ? "−" : "+"}
                 </span>
               </div>
 
               {/* Answer */}
               {openIndex === index && (
-                <p className="mt-4 text-white leading-relaxed animate-fadeIn">
+                <p className="mt-4 text-slate-800 leading-relaxed animate-fadeIn">
                   {faq.answer}
                 </p>
               )}

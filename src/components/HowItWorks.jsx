@@ -163,7 +163,7 @@ export default function HowItWorks() {
   }, [index, isDeleting, delay]);
 
   return (
-    <section className="py-12 bg-white">
+    <section className="py-12 bg-[#FFEDF3] border border-red-300 px-4">
       <div className="max-w-4xl mx-auto text-center">
 
         {/* Typing Text in Indigo */}
@@ -180,7 +180,7 @@ export default function HowItWorks() {
       <div className="flex flex-wrap justify-center items-start gap-6 px-4 mt-5">
         {steps.map((step, index) => (
           <React.Fragment key={index}>
-            <div className="flex flex-col items-center w-44 text-center bg-amber-50 p-4 rounded-xl shadow-sm">
+            <div className="flex flex-col items-center w-44 text-center bg-[#f7e9cc] p-4 rounded-xl shadow-sm">
 
               <div
                 className={`w-14 h-14 rounded-full flex items-center justify-center shadow-md text-white font-bold text-lg ${numberColors[index]}`}
