@@ -4,7 +4,7 @@ import { HiOutlineShoppingBag } from "react-icons/hi";
 
 export default function Navbar() {
   return (
-    <nav className="bg-[#fdfbf3] shadow-sm border-b-2 border-yellow-500">
+    <nav className="bg-white shadow-sm border-b-2 border-yellow-500">
   <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-6">
 
     {/* LOGO + TEXT GROUP */}

@@ -364,6 +364,9 @@
 //   );
 // }
 
+
+
+
 import React from "react";
 import { FaRegClock } from "react-icons/fa";
 import { FaGlobeAsia } from "react-icons/fa";
@@ -403,8 +406,8 @@ export default function ContentProHero() {
 
   return (
     <section className="bg-white py-16">
-      {/* Light Gray Background */}
       <div className="bg-gray-100 py-16">
+
         {/* HERO */}
         <div className="bg-gradient-to-b from-amber-100 via-orange-100 to-yellow-100 rounded-2xl p-12 max-w-4xl mx-auto text-center shadow-md">
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-gray-900">
@@ -414,26 +417,23 @@ export default function ContentProHero() {
         </div>
 
         {/* 3 Cards */}
-        <div className="max-w-6xl mx-auto  px-6 lg:px-8 mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8 mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8">
           <Card
             title="Slow Production"
             desc="Creating new content for every SKU is slow and costly."
-            accentClass="from-red-200 to-red-400"
-            icon={<FaRegClock className="text-red-600" size={30} />}
+            icon={<FaRegClock className="text-white" size={30} />}
           />
 
           <Card
             title="Inconsistent Localisation"
             desc="Local teams struggle to maintain brand consistency."
-            accentClass="from-blue-200 to-blue-400"
-            icon={<FaGlobeAsia className="text-blue-600" size={30} />}
+            icon={<FaGlobeAsia className="text-white" size={30} />}
           />
 
           <Card
             title="Weekly Content Load"
             desc="Teams are overloaded with weekly content demands."
-            accentClass="from-purple-200 to-purple-400"
-            icon={<FaCalendarAlt className="text-purple-600" size={30} />}
+            icon={<FaCalendarAlt className="text-white" size={30} />}
           />
         </div>
       </div>
@@ -441,15 +441,14 @@ export default function ContentProHero() {
   );
 }
 
-function Card({ title, desc, icon, accentClass }) {
+function Card({ title, desc, icon }) {
   return (
     <div
-      className={`rounded-2xl p-10 shadow-md hover:shadow-xl transition transform hover:-translate-y-1 
-      bg-gradient-to-b ${accentClass} text-white`}
+      className="rounded-2xl p-10 shadow-md hover:shadow-xl transition transform hover:-translate-y-1 
+      bg-[#0097AC] text-white"
     >
       <div className="flex items-start gap-4 mt-4">
-        {/* CIRCULAR WHITE ICON BOX */}
-        <div className="flex items-center justify-center w-16 h-16 rounded-full  ">
+        <div className="flex items-center justify-center w-16 h-16 rounded-full">
           {icon}
         </div>
 

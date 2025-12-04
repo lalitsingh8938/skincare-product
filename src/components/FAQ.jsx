@@ -69,11 +69,11 @@ export default function FAQPage() {
         </h1>
 
         {/* FAQ List */}
-        <div className="space-y-4">
+        <div className="space-y-1">
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-gradient-to-b from-[#1d0b28] to-[#12333d] border border-gray-200 rounded-xl p-6 shadow hover:shadow-md transition-all cursor-pointer"
+              className="bg-[#0097AC] border border-gray-200 rounded-xl p-6 shadow hover:shadow-md transition-all cursor-pointer"
               onClick={() => toggleFAQ(index)}
             >
               <div className="flex justify-between items-center">

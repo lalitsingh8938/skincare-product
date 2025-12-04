@@ -109,7 +109,7 @@ export default function HeroSection() {
   return (
     <section className="w-full min-h-screen bg-white px-10 py-10 flex justify-center">
       {/* CONTENT BOX (AMBER BACKGROUND) */}
-      <div className="max-w-7xl w-full  bg-gradient-to-b from-[#1d0b28] to-[#12333d] rounded-3xl p-10 flex flex-col md:flex-row items-center justify-between gap-10 shadow-md">
+      <div className="max-w-7xl w-full  bg-[#006E74] rounded-3xl p-10 flex flex-col md:flex-row items-center justify-between gap-10 shadow-md">
         {/* LEFT TEXT SECTION */}
         <div className="flex-1 text-left">
           <h1 className="text-5xl md:text-6xl font-bold text-white drop-shadow-lg leading-tight">

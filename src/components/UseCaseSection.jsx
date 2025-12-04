@@ -263,7 +263,7 @@ export default function UseCaseTabs() {
       </div>
       {/* Content Box */}
       <div
-        className="max-w-5xl mx-auto bg-gradient-to-b from-[#1d0b28] to-[#12333d] rounded-2xl shadow p-10 
+        className="max-w-5xl mx-auto bg-[#006E74] rounded-2xl shadow p-10 
                    grid grid-cols-1 md:grid-cols-2 gap-10"
       >
         {/* LEFT TEXT */}

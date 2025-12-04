@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-[#1d0b28] to-[#12333d] text-white py-16">
+    <footer className="bg-[#231F20] text-white py-16">
       {/* MAIN GRID */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 px-6 text-sm">
         {/* About */}
