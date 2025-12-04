@@ -163,7 +163,7 @@ export default function HowItWorks() {
   }, [index, isDeleting, delay]);
 
   return (
-    <section className="py-12 bg-[#FFEDF3] border border-red-300 px-4">
+    <section className="py-12 bg-[#FFEDF3] border border-red-200 px-4">
       <div className="max-w-4xl mx-auto text-center">
 
         {/* Typing Text in Indigo */}

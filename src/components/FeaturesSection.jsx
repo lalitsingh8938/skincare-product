@@ -62,7 +62,7 @@ export default function FeaturesSection() {
               <div
                 key={index}
                 className="
-                  bg-gradient-to-b from-[#6c003d34] to-[#F2F0E4]
+                  bg-white
                   border
                   border-white
                   rounded-xl
